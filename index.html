@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio | João Lucas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header>
+  <h1>João Lucas</h1>
+  <p>Roblox Dev •AI System• WebSites</p>
+  <a href="#portfolio" class="btn">View portfolio</a>
+</header>
+
+<section id="portfolio">
+  <h2>🎥 My Portfolio</h2>
+
+  <div class="grid">
+
+    <div class="card" onclick="openVideo('simulator.mp4')">
+      <video muted loop playsinline>
+        <source src="simulator.mp4" type="video/mp4">
+      </video>
+      <span>Simulator System with DataStore</span>
+    </div>
+
+    <div class="card" onclick="openVideo('sistemaderounds.mp4')">
+      <video muted loop playsinline>
+        <source src="sistemaderounds.mp4" type="video/mp4">
+      </video>
+      <span>Round System</span>
+    </div>
+
+    <div class="card" onclick="openVideo('sistemadequest.mp4')">
+      <video muted loop playsinline>
+        <source src="sistemadequest.mp4" type="video/mp4">
+      </video>
+      <span>Quest System</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal">
+  <span onclick="closeVideo()">✖</span>
+  <video id="modalVideo" controls preload="auto"></video>
+</div>
+
+
+<section id="sobre">
+  <h2>👨‍💻 About Me</h2>
+  <p>
+    I am a Roblox Developer focused on creating functional systems, game mechanics, and interactive experiences. I have experience with Lua (Luau) scripting, developing NPCs, combat systems, basic AI, pathfinding, raycasting, and custom GUI systems.
+
+    I enjoy building clean, efficient, and well-structured code while always aiming for good performance and a smooth player experience. I am constantly improving my skills, learning new techniques, and adapting systems to meet project requirements.
+
+    I am motivated, responsible, and always open to new challenges, looking to contribute to engaging Roblox projects and continue growing as a developer.
+  </p>
+</section>
+
+<section id="contato">
+  <h2>📞 Contato</h2>
+  <p>Discord: darkzye</p>
+  <p>Email: darkzye4@gmail.com</p>
+  <p>WhatsApp: (35) 99833-0304</p>
+</section>
+
+<!-- MODAL -->
+<div id="modal">
+  <span onclick="closeVideo()">✖</span>
+  <video controls id="modalVideo"></video>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
